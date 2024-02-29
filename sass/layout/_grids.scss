@@ -1,0 +1,14 @@
+.body {
+  background-color: $color-background-body;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  margin-top: 5rem;
+  width: 85%;
+  height: 50vh;
+  background-color: $color-background-container;
+  box-shadow: 1rem 1.5rem 4rem rgba($color-black-1, 0.15);
+  border-radius: 0.3rem;
+}

@@ -1,0 +1,91 @@
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  color: #333;
+  box-sizing: border-box; }
+
+.body {
+  background-color: #dee2e6;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.container {
+  margin-top: 5rem;
+  width: 85%;
+  height: 50vh;
+  background-color: #e9ecef;
+  box-shadow: 1rem 1.5rem 4rem rgba(33, 37, 41, 0.15);
+  border-radius: 0.3rem; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1.5rem 4rem rgba(33, 37, 41, 0.15);
+  margin: 0.6rem 0.6rem;
+  border-radius: 0.3rem;
+  flex: 0 1 auto; }
+  .header__logo {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.3rem 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer; }
+  .header__nav-menu {
+    align-items: stretch;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    flex: 0 1 auto; }
+    .header__nav-menu-link {
+      display: flex;
+      gap: 0.1rem;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 0rem 1.5rem;
+      border-radius: 0.3rem; }
+      .header__nav-menu-link:first-child {
+        background-color: #dacffd;
+        color: #845ef7; }
+      .header__nav-menu-link svg {
+        padding: 1rem;
+        font-size: 5rem;
+        display: block; }
+      .header__nav-menu-link:hover, .header__nav-menu-link:active {
+        background-color: #dacffd; }
+  .header__preview {
+    border: 1px solid #999;
+    border-radius: 0.3rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-right: 3rem;
+    cursor: pointer; }
+    .header__preview-btn {
+      padding: 0.1rem 2rem; }
+      .header__preview-btn:selection {
+        background-color: transparent; }
+    .header__preview:hover {
+      background-color: #dacffd; }
+
+.linkicon {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  background-color: #845ef7;
+  padding: 0.5rem;
+  border-radius: 0.5rem; }
