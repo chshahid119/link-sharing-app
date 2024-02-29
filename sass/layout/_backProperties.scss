@@ -1,0 +1,29 @@
+.small-dots {
+  position: absolute;
+  left: 9.4rem;
+  top: 25%;
+  display: inline-block;
+  z-index: -100;
+
+  &-dot {
+    background-color: #4c9ea9;
+    margin: 0.2rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+  }
+}
+
+.circle-back {
+  top: 80%;
+  position: absolute;
+  border: 1rem solid #4c9ea9;
+  right: -3rem;
+  z-index: -11111111111111111111111;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+
+  &-div {
+  }
+}
