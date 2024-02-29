@@ -1,0 +1,60 @@
+.profile {
+  &__image {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    color: $color-grey-dark-2;
+    box-shadow: 0 0.2rem 1rem rgba($color-black-1, 0.15);
+
+    img {
+      width: 20%;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      position: relative;
+
+      border-radius: 0.5rem;
+
+      &:hover {
+        filter: blur(0.2rem);
+      }
+    }
+  }
+}
+
+.profile__form {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  gap: 1.7rem;
+  &-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+
+    label {
+      font-size: 1.2rem;
+    }
+
+    input {
+      width: 65%;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1.5rem;
+      outline: none;
+      transition: all 0.3s ease-in-out;
+
+      &:focus {
+        box-shadow: 0.2rem 0.1rem 1rem rgba($color-violet-4, 0.6);
+        border: 0.1rem solid $color-violet-4;
+        transform: scale(1.001);
+      }
+      &::placeholder {
+        font-size: 1.2rem;
+        padding: 1rem;
+      }
+    }
+  }
+}

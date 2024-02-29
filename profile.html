@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>devlinks</title>
+    <title>profile</title>
   </head>
   <body class="body">
     <div class="small-dots">
@@ -63,7 +63,7 @@
                 d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"
               />
             </svg>
-          <a href="#">Links</a>
+            <a class="profile-link" href="index.html">Links</a>
           </div>
           <div class="header__nav-menu-link">
             <svg
@@ -80,7 +80,7 @@
                 d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
               />
             </svg>
-            <a href="profile.html">Profile details</a>
+            <a class="profile-active" href="profile.html">Profile details</a>
           </div>
         </div>
         <div class="header__preview">
@@ -93,7 +93,7 @@
       <section class="hero">
         <div class="hero__left-side">
           <div class="hero__left-side-iphoneIcon">
-            <div class="hero__left-side-iphoneIcon-circle">&nbsp;</div>
+            <div class="hero__left-side-iphoneIcon-circle"><img src="img/ui.jpg" alt=""></div>
             <div class="hero__left-side-iphoneIcon-socials">
               <div class="hero__left-side-iphoneIcon-socials-social github">
                 Github <span>&rarr;</span>
@@ -115,65 +115,48 @@
               Customize your links
             </h2>
             <p class="hero__right-side-addLink-description">
-              Give your link address and then we make your links customized and
-              then share with your friends. So let's start!
-            </p>
-            <p class="hero__right-side-addLink-button">&plus; Add new link</p>
+             Add your details to create a personal touch to your profile.
+            </p>      
+          </div>
+          <div class="profile">
+            <div class="profile__image">
+              <p class="profile__image-p">Profile picture</p>
+              <img src="img/ui.jpg" alt="user profile">
+              <div>Add Your images to make your profile best!</div>
+
+            </div>
           </div>
 
-          <div class="hero__right-side-links">
-            <div class="hero__right-side-links-numbering">
-              <p class="hero__right-side-links-numbering-num"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-                <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
-                <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z"/>
-              </svg>
-                Link #1</p>
-              <p class="hero__right-side-links-numbering-num">Remove</p>
-        </div>
-        <div class="hero__right-side-links-form">
-        <div class="platform-div"><label for="platform">Platform</label>
-          <select name="platform" id="platform"> 
-            <option value="github">Github</option>
-            <option value="github">Youtube</option>
-            <option value="github">Linkedin</option>
-          </select> </div>
-          <div class="link-div">
-            <label for="link">Link</label>
-            <input type="text" id="link" name="link" placeholder="Enter your link here....">
+          <div class="profile__form">
+            <div class="profile__form-name">
+              <label for="name">First Name*</label>
+              <input type="text" id="fname" placeholder="Enter your first name here....">
+            </div>
+            <div class="profile__form-name">
+              <label for="sname">Second Name*</label>
+              <input type="text" id="sname" placeholder="Enter your second name here....">
+            </div>
+            <div class="profile__form-name">
+              <label for="email">Email*</label>
+              <input type="email" id="email" placeholder="Enter your email here....">
+            </div>
+           
           </div>
-        
-        </div>
+
+          <div class="hero__right-side-submit">
+            <div>&nbsp;</div>
+            <div class="hero__right-side-submit-btn">Save</div>
+          </div>
         </div>
 
-        <!-- ---------------------------------------- -->
-        <div class="hero__right-side-links">
-          <div class="hero__right-side-links-numbering">
-            <p class="hero__right-side-links-numbering-num"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-              <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
-              <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z"/>
-            </svg>
-              Link #2</p>
-            <p class="hero__right-side-links-numbering-num">Remove</p>
-      </div>
-      <div class="hero__right-side-links-form">
-      <div class="platform-div"><label for="platform">Platform</label>
-        <select name="platform" id="platform"> 
-          <option value="github">Youtube</option>
-          <option value="github">Github</option>
-          <option value="github">Linkedin</option>
-        </select> </div>
-        <div class="link-div">
-          <label for="link">Link</label>
-          <input type="text" id="link" name="link" placeholder="Enter your link here....">
-        </div>
       
-      </div>
-      </div>
+        </div>
 
-      <div class="hero__right-side-submit">
-        <div>&nbsp;</div>
-        <div class="hero__right-side-submit-btn">Save</div>
-      </div>
+        
+
+   
+       
+      
       </section>
     </div>
   </body>

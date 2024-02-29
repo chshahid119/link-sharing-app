@@ -1,0 +1,16 @@
+.card {
+  box-shadow: 0.2rem 0.1rem 1rem rgba($color-violet-4, 0.6);
+  width: 25%;
+  margin: auto;
+  padding: 3rem;
+  text-align: center;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.5rem;
+
+  &-profile {
+    padding: 3rem;
+    margin-top: 10rem;
+  }
+}
