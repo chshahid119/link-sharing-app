@@ -318,19 +318,29 @@ a {
   height: 20rem;
   border-radius: 50%; }
 
-.card {
-  box-shadow: 0.2rem 0.1rem 1rem rgba(151, 117, 250, 0.6);
-  width: 25%;
+.header-container {
+  background-color: #7048e8;
+  height: 20rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem; }
+  .header-container__header {
+    padding: 1rem 2rem; }
+    .header-container__header-links {
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      padding: 1rem 1rem;
+      border-radius: 0.5rem; }
+      .header-container__header-links a {
+        border: 0.2rem solid #845ef7;
+        font-family: 1.5rem;
+        font-weight: 600; }
+
+.preview_card {
+  width: 30rem;
   margin: auto;
-  padding: 3rem;
-  text-align: center;
-  height: 50rem;
-  display: flex;
-  flex-direction: column;
-  border-bottom: 0.5rem; }
-  .card-profile {
-    padding: 3rem;
-    margin-top: 10rem; }
+  border: 1px solid red;
+  padding: 5rem; }
 
 .profile__image {
   display: flex;

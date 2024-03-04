@@ -1,16 +1,37 @@
-.card {
-  box-shadow: 0.2rem 0.1rem 1rem rgba($color-violet-4, 0.6);
-  width: 25%;
-  margin: auto;
-  padding: 3rem;
-  text-align: center;
-  height: 50rem;
-  display: flex;
-  flex-direction: column;
-  border-bottom: 0.5rem;
 
-  &-profile {
-    padding: 3rem;
-    margin-top: 10rem;
+
+.header-container{
+  background-color: $color-violet-7;
+  height: 20rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  &__header{
+    padding: 1rem 2rem;
+    
+
+    &-links{
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      padding: 1rem 1rem;
+      border-radius: 0.5rem;
+
+      a{
+        border: 0.2rem solid $color-violet-5;
+        font-family: 1.5rem;
+        font-weight: 600;
+        
+      }
+    }
   }
+}
+
+.preview_card{
+  width: 30rem;
+  margin: auto;
+  border: 1px solid red;
+  padding: 5rem;
+
+
 }
