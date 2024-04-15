@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "link sharing app",
   "main": "index.js",
+  "type": "module",
+  "proxy": "http://localhost:3000",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",

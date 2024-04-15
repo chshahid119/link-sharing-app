@@ -29,5 +29,4 @@ logs/
 # Ignore any local configuration files
 config/local.json
 
-# Ignore package-lock.json file (if you're using npm 5+)
-package-lock.json
+
