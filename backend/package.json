@@ -1,0 +1,14 @@
+{
+  "name": "link-sharing-backend",
+  "version": "1.0.0",
+  "description": "A link sharing app which let you saved the links and then share it with freinds",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shahid Chaudhary",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
