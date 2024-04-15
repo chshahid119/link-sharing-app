@@ -4,7 +4,6 @@
   "description": "link sharing app",
   "main": "index.js",
   "type": "module",
-  "proxy": "http://localhost:3000",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
@@ -20,8 +19,5 @@
     "node-sass": "^9.0.0",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.12.0"
-  },
-  "dependencies": {
-    "mongodb": "^6.4.0"
   }
 }

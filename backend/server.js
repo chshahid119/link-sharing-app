@@ -1,7 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
 const app = express();
+
+app.use(cors());
 const PORT = process.env.PORT || 3000;
 
 // Middleware to parse JSON bodies
@@ -25,8 +28,21 @@ app.post("/api/v1/data", (req, res) => {
 
 app.get("/api/v1/data", (req, res) => {
   // Here you can retrieve data from your database or any source
-  const responseData = { key: "value" }; // Example data
-  res.json(responseData);
+  const jokes = [
+    {
+      id: 1,
+      joke: "Main aik gadha hon hahahah",
+    },
+    {
+      id: 2,
+      joke: "Main aik gadha hon hahahah",
+    },
+    {
+      id: 3,
+      joke: "Main aik gadha hon hahahah",
+    },
+  ]; // Example data
+  res.json(jokes);
 });
 
 app.delete("/api/v1/data/:id", (req, res) => {
