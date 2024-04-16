@@ -8,3 +8,4 @@ function DisplayName() {
 DisplayName();
 
 model.fetchData();
+sendDataView.getDataIntoController();
