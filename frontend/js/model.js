@@ -15,7 +15,7 @@ export const fetchData = async function () {
   try {
     const res = await fetch(url);
     const data = await res.json();
-    console.log(data);
+    // console.log(data);
   } catch (err) {
     console.log(err);
   }
