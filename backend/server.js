@@ -2,6 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
+const mongoose = require("mongoose");
+
 const app = express();
 
 app.use(cors());
@@ -9,6 +11,32 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
+
+// Connect to MongoDB
+
+// Schema
+// const userSchema = new mongoose.Schema({
+//   firstName: {
+//     type: String,
+//     required: true,
+//   },
+//   lastName: {
+//     type: String,
+//   },
+//   email: {
+//     required: true,
+//     required: true,
+//     unique: true,
+//   },
+//   jobTitle: {
+//     type: String,
+//   },
+//   gender: {
+//     type: String,
+//   },
+// });
+
+// const User = mongoose.model("user", userSchema);
 
 // Routes will go here
 

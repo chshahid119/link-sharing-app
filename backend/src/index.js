@@ -1,7 +1,13 @@
-import { config } from "dotenv";
-import { executeCrudOperations } from "./crudOperations.js";
+import { MongoClient } from "mongodb";
 
-config();
-// console.log(process.env.DB_URL);
+const url = "mongodb://localhost:27017/mydb";
 
-await executeCrudOperations();
+MongoClient.connect(url, (err, client) => {
+  if (err) {
+    console.error("Failed to connect to MongoDB:", err);
+    return;
+  }
+  const db = client.db();
+  console.log("Database created!");
+  client.close();
+});
