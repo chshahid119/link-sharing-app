@@ -19,19 +19,12 @@ app.post("/api/v1/data", (req, res) => {
   res.json({ message: "Data received successfully!" });
 });
 
-app.post("/api/v1/data", (req, res) => {
-  const data = req.body;
-  console.log("Received data from front end:", data);
-  // Here you can process the received data
-  res.json({ message: "Data received successfully!" });
-});
-
 app.get("/api/v1/data", (req, res) => {
   // Here you can retrieve data from your database or any source
   const jokes = [
     {
       id: 1,
-      joke: "Main aik gadha hon hahahah",
+      joke: "joke no 1",
     },
     {
       id: 2,

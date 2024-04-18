@@ -10,6 +10,27 @@ export const state = {
   link2: [],
 };
 
+export const sendDataToBackend = async function (data) {
+  const url = "http://localhost:3000/api/v1/data";
+  try {
+    const res = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (res.ok) {
+      console.log("Data Sent Successfully");
+    } else {
+      throw new Error("Data not sent");
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 export const fetchData = async function () {
   const url = "http://localhost:3000/api/v1/data";
   try {

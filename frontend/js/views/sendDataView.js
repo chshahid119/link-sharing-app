@@ -23,30 +23,23 @@ class sendDataView {
     });
   }
 
-  createFormObjData() {
-    this._Link1PlatformType.addEventListener("change", function (e) {
-      this._link1Platform = e.target.value;
-    });
-    this._Link1Url.addEventListener("change", function (e) {
-      this._link1Url = e.target.value;
-    });
-    this._Link2PlatformType.addEventListener("change", function (e) {
-      this._link2PlatForm = e.target.value;
-    });
-    this._Link2Url.addEventListener("change", function (e) {
-      this._link2Url = e.target.value;
-    });
-  }
+  getAllFormValues(handler) {
+    this._saveBtn.addEventListener("click", (e) => {
+      e.preventDefault();
 
-  getDataIntoController() {
-    this._saveBtn.addEventListener("click", function () {
-      this.createFormObjData();
-      console.log(
-        this._link1Platform,
-        this._link1Url,
-        this._link2Platform,
-        this._link2Url
-      );
+      this._link1Platform = this._Link1PlatformType.value;
+      this._link1Url = this._Link1Url.value;
+      this._link2Platform = this._Link2PlatformType.value;
+      this._link2Url = this._Link2Url.value;
+
+      let allData = {
+        link1Platform: this._link1Platform,
+        link1Url: this._link1Url,
+        link2Platform: this._link2Platform,
+        link2Url: this._link2Url,
+      };
+
+      handler(allData);
     });
   }
 }

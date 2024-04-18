@@ -6,6 +6,14 @@ function DisplayName() {
 }
 
 DisplayName();
-
 model.fetchData();
-sendDataView.getDataIntoController();
+
+const sendData = (data) => {
+  model.sendDataToBackend(data);
+};
+
+const init = () => {
+  sendDataView.getAllFormValues(sendData);
+};
+
+init();
